@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>change_book_server</display-name>
+
+	<servlet>
+		<servlet-name>PushMessage</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.PushMessageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PushMessage</servlet-name>
+		<url-pattern>/pushMessage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetMessage</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.GetMessageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetMessage</servlet-name>
+		<url-pattern>/getMessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetAccountIntroduce</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.GetAccountIntroduceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetAccountIntroduce</servlet-name>
+		<url-pattern>/getAccountIntroduce</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SetAccountIntroduce</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.SetAccountIntroduceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SetAccountIntroduce</servlet-name>
+		<url-pattern>/setAccountIntroduce</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetPublishedMessage</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.GetPublishedMessageSetvlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetPublishedMessage</servlet-name>
+		<url-pattern>/getPublishedMessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RemoveBookFromBookToChangedBook</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.RemoveBookFromBookToChangedBookServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveBookFromBookToChangedBook</servlet-name>
+		<url-pattern>/removeBookFromBookToChangedBook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetGivedBookMessage</servlet-name>
+		<servlet-class>com.touch.graduation.servlet.GetGivedBookMessageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetGivedBookMessage</servlet-name>
+		<url-pattern>/getGivedBookMessage</url-pattern>
+	</servlet-mapping>
+
+</web-app>
