@@ -182,6 +182,6 @@ public class Book implements Serializable {
 	}
 
 	public String toString() {
-		return "hello,world.";
+		return "sun fu jin, are you ok";
 	}
 }
