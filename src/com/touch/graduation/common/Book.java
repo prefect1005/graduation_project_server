@@ -181,4 +181,7 @@ public class Book implements Serializable {
 		this.userId = userId;
 	}
 
+	public String toString() {
+		return "hello,world.";
+	}
 }
