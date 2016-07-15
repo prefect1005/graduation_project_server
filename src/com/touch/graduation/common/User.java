@@ -21,4 +21,9 @@ public class User {
 		this.passwd = passwd;
 	}
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "ÄãºÃ";
+	}
 }
